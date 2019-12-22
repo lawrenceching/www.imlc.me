@@ -23,10 +23,16 @@ type=AVC msg=audit(1576674696.863:116775): avc:  denied  { name_connect } for  p
 type=AVC msg=audit(1576674697.016:116776): avc:  denied  { name_connect } for  pid=10795 comm="nginx" dest=9200 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:wap_wsp_port_t:s0 tclass=tcp_socket permissive=0
 ```
 
-
+意识到问题处在了 SELinux 上。通过如下命令，你可以
 ```
 setsebool -P httpd_can_network_connect 1
 ```
 
+Nginx 在 SELinux 系统中打上了"httpd_t"标签，并不能反向代理到同一主机上的上游服务。具体情况可以参考 Nginx 官方写的博客:  
+https://www.nginx.com/blog/using-nginx-plus-with-selinux/
+
 ## Reference
+
 https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx
+https://www.redhat.com/en/topics/linux/what-is-selinux
+https://www.nginx.com/blog/using-nginx-plus-with-selinux/
