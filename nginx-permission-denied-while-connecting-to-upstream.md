@@ -27,8 +27,9 @@ type=AVC msg=audit(1576674697.016:116776): avc:  denied  { name_connect } for  p
 ```
 setsebool -P httpd_can_network_connect 1
 ```
-
-Nginx 在 SELinux 系统中打上了"httpd_t"标签，并不能反向代理到同一主机上的上游服务。具体情况可以参考 Nginx 官方写的博客:  
+SELinux（Security-Enhanced Linux）是 Linux 系统上提高系统安全性的一个系统。通过定义一系列的政策（policy）和 boolean 规则限制指定程序的行为。
+SELinux 通过标签（Label）系统来识别和组织不同的应用程序。
+Nginx 在 SELinux 系统中打上了"httpd_t"标签，默认行为下并不能反向代理到同一主机上的上游服务端口。具体情况可以参考 Nginx 官方写的博客:  
 https://www.nginx.com/blog/using-nginx-plus-with-selinux/
 
 ## Reference
