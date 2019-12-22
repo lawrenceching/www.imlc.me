@@ -33,6 +33,6 @@ https://www.nginx.com/blog/using-nginx-plus-with-selinux/
 
 ## Reference
 
-https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx
-https://www.redhat.com/en/topics/linux/what-is-selinux
-https://www.nginx.com/blog/using-nginx-plus-with-selinux/
+https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx  
+https://www.redhat.com/en/topics/linux/what-is-selinux  
+https://www.nginx.com/blog/using-nginx-plus-with-selinux/  
