@@ -23,7 +23,7 @@ type=AVC msg=audit(1576674696.863:116775): avc:  denied  { name_connect } for  p
 type=AVC msg=audit(1576674697.016:116776): avc:  denied  { name_connect } for  pid=10795 comm="nginx" dest=9200 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:wap_wsp_port_t:s0 tclass=tcp_socket permissive=0
 ```
 
-意识到问题处在了 SELinux 上。通过如下命令，你可以
+意识到问题处在了 SELinux 上。你通过如下命令修复问题
 ```
 setsebool -P httpd_can_network_connect 1
 ```
