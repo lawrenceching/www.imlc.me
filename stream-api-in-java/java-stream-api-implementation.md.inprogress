@@ -1,0 +1,19 @@
+# Java Stream API Implementation
+
+## Features
+* Avoid repeatedly reading data source
+
+## TODOs
+What is StreamShape
+What is StreamOpFlag
+How does stream run in parallels
+How does stream close
+Spliterator
+
+## References
+Java8学习记录(二)-Stream原理 - https://zhuanlan.zhihu.com/p/31220388  
+Streams under the hood -https://developer.ibm.com/articles/j-java-streams-3-brian-goetz/  
+From concurrent to parallel - https://developer.ibm.com/articles/j-java-streams-4-brian-goetz/  
+Stream实现原理 - http://lyyljs.site/2019/05/13/Stream-%E7%BC%96%E7%A8%8B%E8%83%8C%E5%90%8E/  
+Javadoc of Interface Stream<T> - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html  
+Parallelism - https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html  
