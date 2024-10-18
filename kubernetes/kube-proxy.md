@@ -13,3 +13,7 @@ cmd/kube-proxy/app/server.go:Run()
         getDualStackMode()
 cmd/kube-proxy/app/server.go:runLoop()
 ```
+
+## References
+
+https://blog.51cto.com/youerning/5294012
