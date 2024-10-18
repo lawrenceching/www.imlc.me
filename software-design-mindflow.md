@@ -7,8 +7,6 @@
 * Business Requirement
 * API changes
 * Traffic Model changes
-* Configuration
-* Log
 
 ### Non-functional Requirement
 
@@ -16,6 +14,11 @@
 ## Implementation
 
 TODO:
+
+### Configuration
+### Log
+### Alert
+### Metric
 
 ##  Bakdward/Forward Compatibility
 
@@ -36,12 +39,9 @@ Impact Analysis if there is traffic impact
 
 ## GeoRed
 
-
 ## Security
 
 ### Privacy
-
-
 ### Audit
 ### GDPR
 
